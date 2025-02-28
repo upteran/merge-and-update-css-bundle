@@ -1,0 +1,53 @@
+{
+  "name": "merge-and-update-css-bundle",
+  "version": "0.0.1",
+  "description": "A plugin that merges multiple CSS files into a single bundle and automatically updates it in the background during watch mode.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/upteran/merge-and-update-css-bundle"
+  },
+  "keywords": [
+    "CSS",
+    "merge",
+    "bundler",
+    "watch-mode",
+    "postcss",
+    "plugin"
+  ],
+  "author": "Andrew Tereshkin <upteran@gmail.com>",
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "postcss": "^8.4.0",
+    "postcss-discard-duplicates": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "auto": "^11.3.0",
+    "eslint": "9.21.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "peerDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

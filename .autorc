@@ -1,0 +1,39 @@
+{
+  "plugins": [
+    "npm",
+    "all-contributors",
+    "first-time-contributor",
+    "released"
+  ],
+  "author": "github-actions <actions@github.com>",
+  "baseBranch": "main",
+  "labels": [
+    {
+      "name": "major",
+      "changelogTitle": "💥 Breaking Change",
+      "description": "Introduces a breaking API change",
+      "releaseType": "major",
+      "color": "#FF0000"
+    },
+    {
+      "name": "minor",
+      "changelogTitle": "🚀 Enhancement",
+      "description": "Adds a new feature or enhancement",
+      "releaseType": "minor",
+      "color": "#00FF00"
+    },
+    {
+      "name": "patch",
+      "changelogTitle": "🐛 Bug Fix",
+      "description": "Fixes a bug",
+      "releaseType": "patch",
+      "color": "#0000FF"
+    },
+    {
+      "name": "skip-release",
+      "description": "Skips running release when PR is merged",
+      "releaseType": "none",
+      "color": "#CCCCCC"
+    }
+  ]
+} 
