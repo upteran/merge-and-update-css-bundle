@@ -28,9 +28,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       
-      - name: Build
-        run: pnpm build
-      
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -39,4 +36,4 @@ jobs:
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
-          pnpm release 
+          pnpm release
