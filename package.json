@@ -1,6 +1,6 @@
 {
   "name": "merge-and-update-css-bundle",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "A plugin that merges multiple CSS files into a single bundle and automatically updates it in the background during watch mode.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
